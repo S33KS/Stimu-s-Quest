@@ -1,0 +1,137 @@
+<!Doctype html>
+<Html>
+   <head> 
+       <title> Stmu's Archeon quest </title>
+       <h1> Yori's Lair </h1>
+
+   <style> body {
+  background-image: url("gojo_fight.gif");
+  background-size: cover;   
+  background-position: contain; 
+  background-repeat: no-repeat; 
+   text-align: center; </style>
+   <body> 
+        Welcome mortals! 
+        To your simulation, push your dopamine to next level
+        
+        
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <style>
+    .next-level {
+      position: fixed;
+      right: 20px;        
+      top: 50%;           
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    .next-level button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: gray; /* starts gray (disabled) */
+      color: Black;
+      border: none;
+      border-radius: 8px;
+      cursor: not-allowed;
+      font-weight: bold;
+    }
+    .next-level button.enabled {
+      background-color: orange; /* active color */
+      cursor: pointer;
+    }
+    #timer {
+      margin-top: 10px;
+      font-size: 14px;
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+<body>
+ <div class = 
+  <!-- NEXT LEVEL button with timer -->
+  <div class="next-level">
+    <button id="nextBtn" disabled>NEXT LEVEL</button>
+    <div id="timer">Unlocks in 60s</div>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("🚧 Under construction 🚧");
+    }
+
+    let timeLeft = 60; // seconds
+    const timerDisplay = document.getElementById("timer");
+    const btn = document.getElementById("nextBtn");
+
+    // Update the timer every 1 second
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timerDisplay.textContent = "Unlocks in " + timeLeft + "s";
+
+      if (timeLeft <= 0) {
+        clearInterval(countdown); // stop timer
+        timerDisplay.textContent = "Button unlocked!";
+        btn.disabled = false;
+        btn.classList.add("enabled");
+        btn.setAttribute("onclick", "showMessage()");
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
+        
+   </body>
+   
+<div class="video-container">
+  <video autoplay loop muted playsinline>
+    <source src="violet_evergarden.mp4" type="video/mp4">
+  </video>
+</div>
+<style>.video-container {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 300px; 
+  height: auto;
+}
+video {
+  width: 100%;
+  height: auto;
+}</style>
+
+<div class="video-container1">
+  <video autoplay loop muted playsinline>
+    <source src="subway_surfer.mp4" type="video/mp4">
+  </video>
+</div>
+<style>.video-container1 {
+  position: absolute;
+  left: 20px;
+  right: 0px;
+  bottom: 20px;
+  width: 200px; 
+  height: auto;
+}
+video {
+  width: 100%;
+  height: auto;
+}</style>
+   <div class = "lonely">
+<audio src="lonely.mp3" controls autoplay loop></audio>
+</div>
+    <style>.lonely {
+       position: absolute;
+       
+       top: 50%;
+      left: 20px;
+       width: 200px; 
+       height: auto;
+   }
+   
+   
+    </style>
+   </head>
+  </html>
+  
+  
